@@ -1,0 +1,19 @@
+project:
+  type: website
+
+website:
+  title: "blogdotcb"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/chrisbrownlie
+      - icon: linkedin
+        href: https://www.linkedin.com/in/cnbrownlie/
+format:
+  html:
+    theme: morph
+    css: styles.css
+
+
+

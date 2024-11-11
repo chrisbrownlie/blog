@@ -1,0 +1,38 @@
+---
+title: "My Blog"
+description: "Hello and welcome to the new home for everything I write!"
+author: "Chris Brownlie"
+date: "11/11/2024"
+from: markdown+emoji
+---
+
+# Ahoy
+
+Hello there, this is my new blog! :wave: I hope you find something interesting or 
+useful here, but don't hold your breath :grinning:
+
+My reasoning for setting this up is threefold:
+
+- I've been posting 'This week in R' on LinkedIn for a while now, but wanted
+them to also be hosted somewhere they are easier to navigate (i.e. so if you
+miss a few weeks you can quickly scan back over them).
+
+- I want to start writing some more different types of code-based articles,
+so LinkedIn isn't a viable option if I want to keep everything in one place.
+
+- I'm planning to update my personal site and want to embed this blog in there,
+for funsies.
+
+# Me, myself and I
+
+I'm an analytics consultant/data scientist/AI placeholder working in the UK.
+I use R for my work and many of the posts here will use R, but my area of
+interest and expertise lies in **data-based web applications**. By which I mean,
+web apps that have the primary use of analysing, visualising, or accessibilising (?)
+data.
+
+In my current day job I primarily do this using R Shiny (which I am a big fan and
+proponent of), but I also use Python-based frameworks like FastAPI, Streamlit and
+Shiny for Python. Naturally all of this web app work comes with some Javascript, 
+Typescript and UI/frontend frameworks (although I'll admit I am slightly less
+comfortable with these than I am with R or Python).
