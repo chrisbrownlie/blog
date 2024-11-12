@@ -1,0 +1,38 @@
+---
+title: "This week in R (2024-09-20)"
+description: "Your weekly R update"
+author: "Chris Brownlie"
+date: "2024-09-20"
+from: markdown+emoji
+---
+
+Happy Friday everyone! After a long hiatus (I took a sabbatical and did some travelling), we're back! Here's some news from the world of R this week - plus a couple of news items from the past 4 months:
+
+- **Vaping comes to R?**: :wind_face: a new 'typed superset of R' is being developed and the alpha release is now here. The brainchild of John Coene (of ['Javascript for R'](https://book.javascript-for-r.com/) fame), [Vapour](https://github.com/vapourlang/vapour/releases) aims to improve the robustness of R code by using type checking and providing pre-processing like static type checks. [Read John's blog post](https://vapour.run/glob/vapour-release) for more info on the reasoning behind it.
+- **An IDE, not a Transformer**: :robot: In June, Posit announced and released into public beta [their new IDE - Positron](https://github.com/posit-dev/positron). The product is a fork of VS Code that is aimed at R and Python developers, potentially providing a way for R users to dip their toes in Python's muddy waters by providing some of the home comforts of RStudio in a more generalised IDE. Positron is still in public beta phase so has some growing up to do yet, but early feedback is posit(ron)ive and personally I'm enjoying it for Python development myself!
+
+- **Multi-task like a pro**: :lotus_position: Andres Quintero has [recorded a short tutorial](https://www.youtube.com/watch?v=hQEdbrb2iTc) on how to get multiple shiny apps running in the same Docker image, using [ixpantia's faucet framework for routing and load balancing R applications](https://github.com/ixpantia/faucet).
+
+- **Quilts, rugs and...plots?**: :sewing_needle: v1.3.0 of the [{patchwork} package](https://patchwork.data-imaginist.com/) has now been released, bringing some extra functionality for arranging and composing multiple {ggplot2} plots. One of the key new features is the ability to arrange {gt} tables in the same way. [See the tidyverse blog post here](https://www.tidyverse.org/blog/2024/09/patchwork-1-3-0/#tables-are-figures-too).
+
+- **Shiny in Production**: :factory: The annual Shiny in Production conference hosted by Jumping Rivers is only a few weeks away, with the speakers and workshops now announced. Next Wednesday (25th September) is your last day to get a ticket so [check out the schedule and information here!](https://shiny-in-production.jumpingrivers.com/)
+
+- **Conference season**: :busts_in_silhouette:  I've heard from friends and colleagues that both posit::conf(2024) and EARL 2024 were great successes over the past few months, with many interesting and inspiring talks. [See the posit::conf website](https://posit.co/conference/) for the dates and location of next year's conference and [keep an eye on EARL](https://earl-conference.com/) for news on their next instalment. Also a chance to shout out [Jumping Rivers' very helpful list of R conferences](https://jumpingrivers.github.io/meetingsR/events.html).
+
+- **Fun fact**: :thinking: did you know that the result of your last executed R expression is saved to an internal value? This can come in handy when you forget to assign the result of a long-running function.
+
+```{r}
+#| eval: FALSE
+# Run a long function
+some_very_long_function(...) # oh no, I forgot to assign the result to an object
+
+# Save the result using `.Last.value`
+my_output <- .Last.value
+```
+
+New package versions:
+
+- [{rix} v0.11.1](https://docs.ropensci.org/rix/index.html) - a relatively new ROpenSci package for using [Nix package manager](https://httr2.r-lib.org/news/index.html#httr2-104) for reproducible builds.
+- [{httr2} v1.0.4](https://httr2.r-lib.org/news/index.html#httr2-104) - bug fixes and improvements to r-lib's package for API interactions.
+
+I post updates like this every week so if you're interested feel free to follow. Comment below if there's something interesting you found out this week too!

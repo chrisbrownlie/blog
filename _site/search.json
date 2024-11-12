@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "My Blog",
+    "objectID": "posts/this_week_in_r_20240920/index.html",
+    "href": "posts/this_week_in_r_20240920/index.html",
+    "title": "This week in R (2024-09-20)",
     "section": "",
-    "text": "Ahoy\nHello there, this is my new blog! 👋 I hope you find something interesting or useful here, but don’t hold your breath 😀\nMy reasoning for setting this up is threefold:\n\nI’ve been posting ‘This week in R’ on LinkedIn for a while now, but wanted them to also be hosted somewhere they are easier to navigate (i.e. so if you miss a few weeks you can quickly scan back over them).\nI want to start writing some more different types of code-based articles, so LinkedIn isn’t a viable option if I want to keep everything in one place.\nI’m planning to update my personal site and want to embed this blog in there, for funsies.\n\n\n\nMe, myself and I\nI’m an analytics consultant/data scientist/AI placeholder working in the UK. I use R for my work and many of the posts here will use R, but my area of interest and expertise lies in data-based web applications. By which I mean, web apps that have the primary use of analysing, visualising, or accessibilising (?) data.\nIn my current day job I primarily do this using R Shiny (which I am a big fan and proponent of), but I also use Python-based frameworks like FastAPI, Streamlit and Shiny for Python. Naturally all of this web app work comes with some Javascript, Typescript and UI/frontend frameworks (although I’ll admit I am slightly less comfortable with these than I am with R or Python)."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "blogdotcb",
-    "section": "",
-    "text": "My Blog\n\n\n\n\n\nHello and welcome to the new home for everything I write!\n\n\n\n\n\nNov 11, 2024\n\n\nChris Brownlie\n\n\n\n\n\n\nNo matching items"
+    "text": "Happy Friday everyone! After a long hiatus (I took a sabbatical and did some travelling), we’re back! Here’s some news from the world of R this week - plus a couple of news items from the past 4 months:\n\nVaping comes to R?: 🌬️ a new ‘typed superset of R’ is being developed and the alpha release is now here. The brainchild of John Coene (of ‘Javascript for R’ fame), Vapour aims to improve the robustness of R code by using type checking and providing pre-processing like static type checks. Read John’s blog post for more info on the reasoning behind it.\nAn IDE, not a Transformer: 🤖 In June, Posit announced and released into public beta their new IDE - Positron. The product is a fork of VS Code that is aimed at R and Python developers, potentially providing a way for R users to dip their toes in Python’s muddy waters by providing some of the home comforts of RStudio in a more generalised IDE. Positron is still in public beta phase so has some growing up to do yet, but early feedback is posit(ron)ive and personally I’m enjoying it for Python development myself!\nMulti-task like a pro: 🧘 Andres Quintero has recorded a short tutorial on how to get multiple shiny apps running in the same Docker image, using ixpantia’s faucet framework for routing and load balancing R applications.\nQuilts, rugs and…plots?: 🪡 v1.3.0 of the {patchwork} package has now been released, bringing some extra functionality for arranging and composing multiple {ggplot2} plots. One of the key new features is the ability to arrange {gt} tables in the same way. See the tidyverse blog post here.\nShiny in Production: 🏭 The annual Shiny in Production conference hosted by Jumping Rivers is only a few weeks away, with the speakers and workshops now announced. Next Wednesday (25th September) is your last day to get a ticket so check out the schedule and information here!\nConference season: 👥 I’ve heard from friends and colleagues that both posit::conf(2024) and EARL 2024 were great successes over the past few months, with many interesting and inspiring talks. See the posit::conf website for the dates and location of next year’s conference and keep an eye on EARL for news on their next instalment. Also a chance to shout out Jumping Rivers’ very helpful list of R conferences.\nFun fact: 🤔 did you know that the result of your last executed R expression is saved to an internal value? This can come in handy when you forget to assign the result of a long-running function.\n\n\n# Run a long function\nsome_very_long_function(...) # oh no, I forgot to assign the result to an object\n\n# Save the result using `.Last.value`\nmy_output &lt;- .Last.value\n\nNew package versions:\n\n{rix} v0.11.1 - a relatively new ROpenSci package for using Nix package manager for reproducible builds.\n{httr2} v1.0.4 - bug fixes and improvements to r-lib’s package for API interactions\n\nI post updates like this every week so if you’re interested feel free to follow. Comment below if there’s something interesting you found out this week too!"
   },
   {
     "objectID": "about.html",
@@ -19,5 +12,19 @@
     "title": "About",
     "section": "",
     "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "blogdotcb",
+    "section": "",
+    "text": "My Blog\n\n\n\n\n\nHello and welcome to the new home for everything I write!\n\n\n\n\n\nNov 11, 2024\n\n\nChris Brownlie\n\n\n\n\n\n\n\n\n\n\n\n\nThis week in R (2024-09-20)\n\n\n\n\n\nYour weekly R update\n\n\n\n\n\nSep 20, 2024\n\n\nChris Brownlie\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "My Blog",
+    "section": "",
+    "text": "Ahoy\nHello there, this is my new blog! 👋 I hope you find something interesting or useful here, but don’t hold your breath 😀\nMy reasoning for setting this up is threefold:\n\nI’ve been posting ‘This week in R’ on LinkedIn for a while now, but wanted them to also be hosted somewhere they are easier to navigate (i.e. so if you miss a few weeks you can quickly scan back over them).\nI want to start writing some more different types of code-based articles, so LinkedIn isn’t a viable option if I want to keep everything in one place.\nI’m planning to update my personal site and want to embed this blog in there, for funsies.\n\n\n\nMe, myself and I\nI’m an analytics consultant/data scientist/AI placeholder working in the UK. I use R for my work and many of the posts here will use R, but my area of interest and expertise lies in data-based web applications. By which I mean, web apps that have the primary use of analysing, visualising, or accessibilising (?) data.\nIn my current day job I primarily do this using R Shiny (which I am a big fan and proponent of), but I also use Python-based frameworks like FastAPI, Streamlit and Shiny for Python. Naturally all of this web app work comes with some Javascript, Typescript and UI/frontend frameworks (although I’ll admit I am slightly less comfortable with these than I am with R or Python)."
   }
 ]
