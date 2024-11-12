@@ -22,7 +22,7 @@ Happy Friday everyone! After a long hiatus (I took a sabbatical and did some tra
 - **Fun fact**: :thinking: did you know that the result of your last executed R expression is saved to an internal value? This can come in handy when you forget to assign the result of a long-running function.
 
 ```{r}
-#| eval: FALSE
+#| eval: false
 # Run a long function
 some_very_long_function(...) # oh no, I forgot to assign the result to an object
 
