@@ -1,0 +1,28 @@
+alerts:
+- rule: DEPLOYMENT_FAILED
+- rule: DOMAIN_FAILED
+domains:
+- domain: blog.chrisbrownlie.com
+  type: PRIMARY
+features:
+- buildpack-stack=ubuntu-22
+ingress:
+  rules:
+  - component:
+      name: christopherbrownlie-blog
+    match:
+      path:
+        prefix: /
+name: blog-dot-chrisbrownlie
+region: lon
+services:
+- http_port: 8080
+  image:
+    registry: christopherbrownlie
+    registry_credentials: EV[1:IKbhh100M8wqrjH9v7unUoeht5+qkhBw:em2sm1u+9QDymWEmpnyQlqXrjYto9Q6Jzxw4+DCnqJgkld0Q8Ty2OYNXzEabPku6TBYxE6GXvoKEgyvZcTDi6ghQuyNxHzae]
+    registry_type: DOCKER_HUB
+    repository: blog
+    tag: latest
+  instance_count: 1
+  instance_size_slug: apps-s-1vcpu-0.5gb
+  name: christopherbrownlie-blog
