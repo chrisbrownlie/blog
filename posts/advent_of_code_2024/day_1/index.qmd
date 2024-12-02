@@ -1,9 +1,12 @@
 ---
 title: "AOC 2024: Day 1"
-description: "Day 1 of the Advent of Code 2024"
+description: "Day 1 of the Advent of Code 2024: 'Historian Hysteria'"
 author: "Chris Brownlie"
 date: "2024-12-01"
 from: markdown+emoji
+categories:
+- rstats
+- "advent of code"
 ---
 
 ## Intro
@@ -15,6 +18,8 @@ I plan to use R mainly, and I think generally there are three ways to
 approach (or three choices to prioritise for) AoC solutions: speed, code golf 
 or readability. I'll be going for the latter of
 the three so will be using tidyverse packages where possible.
+
+![](/assets/advent_of_code.png){height=90% width=90% fig-align=center fig-alt="Logo for Advent of Code"}
 
 ## Day 1: Historian Hysteria
 

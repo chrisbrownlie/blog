@@ -1,10 +1,15 @@
 ---
 title: "AOC 2024: Day 2"
-description: "Day 2 of the Advent of Code 2024"
+description: "Day 2 of the Advent of Code 2024: 'Red-Nosed Reports'"
 author: "Chris Brownlie"
 date: "2024-12-02"
 from: markdown+emoji
+categories:
+- rstats
+- "advent of code"
 ---
+
+![](/assets/advent_of_code.png){height=90% width=90% fig-align=center fig-alt="Logo for Advent of Code"}
 
 ## Day 2: Red-Nosed Reports
 
