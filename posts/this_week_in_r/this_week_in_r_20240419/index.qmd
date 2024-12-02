@@ -1,0 +1,84 @@
+---
+title: "This week in R (2024-04-19)"
+description: "This week in R: exciting news for R-universe; {polars} continues solidifying its presence in R; cloud storage tutorials and some upcoming events!"
+author: "Chris Brownlie"
+date: 2024-04-19
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Some more news from the world of R this week:
+
+-   **Astronomical docs: **R-universe have been accepted as a [Google
+    Season of Docs 2024
+    project](https://developers.google.com/season-of-docs/docs/participants){target="_blank"
+    rel="nofollow noopener"}. This means they have secured funding to
+    supercharge their documentation, including developing a new Quarto
+    site to help people get started. As a fan of R-universe and ROpenSci
+    I can't wait to see what Maëlle and the team come up with. See
+    [their proposal
+    here](https://github.com/r-universe-org/gsod-2024/wiki/GSOD-2024-proposal:-Documenting-R-software-publication-with-R%E2%80%90universe){target="_blank"
+    rel="nofollow noopener"}.
+
+-   **Polars bears:** the {polars} R package [has had a new
+    release,](https://github.com/pola-rs/r-polars/releases/tag/v0.16.0){target="_blank"
+    rel="nofollow noopener"} which comes with a lot of refactoring and
+    renaming to bring it more in line with its Python equivalent. If you
+    don't know it,
+    [{polars}](https://rpolars.github.io/){target="_blank"
+    rel="nofollow noopener"} is a package written in Rust with a
+    Python-like syntax for fast, efficient data manipulation.
+
+-   **Cloud goddess:  **Thomas Sandmann has [written an interesting blog
+    post](https://tomsing1.github.io/blog/posts/athena/){target="_blank"
+    rel="nofollow noopener"} about his experience of interacting with
+    AWS S3 storage and the AWS Athena service using the {paws} and
+    {noctua} R packages respectively.
+
+-   **Tables and chairs:  **Posit have [announced the start of their
+    2024 Table
+    Contest](https://posit.co/blog/announcing-the-2024-table-contest/){target="_blank"
+    rel="nofollow noopener"}. Between now and the deadline of 31st May,
+    R and Python developers will be creating many beautiful, useful,
+    informative tables - if you work with tables or data visualisation
+    I'd encourage you to think about submitting too!
+
+-   **More learning:** ShinyConf finishes today and if you're in the
+    mood for more and based in London, [check out
+    SatRdays](https://satrdays-london-2024.jumpingrivers.com/#schedule){target="_blank"
+    rel="nofollow noopener"} next Saturday 27th. One talk that I think
+    looks very interesting is Charlie Gao talking about using {mirai} in
+    Shiny and Plumber applications.
+
+-   **Fun fact:** every R version since 2011 has been [named after a
+    reference from the Peanuts comic
+    strip](https://en.wikipedia.org/wiki/R_(programming_language)){target="_blank"
+    rel="nofollow noopener"}. See
+    [here](https://www.gocomics.com/peanuts/1980/06/29){target="_blank"
+    rel="nofollow noopener"} for the origin of the name for R 4.3.3
+    (Angel Food Cake).
+
+![AI generated image combining \'Angel Food Cake\' and
+\'peanuts\'\...](//:0){media-urn=""
+li-src="https://media.licdn.com/dms/image/v2/D4E12AQFLG80rIwWhOg/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1713520270092?e=1736985600&v=beta&t=XQjYLiSAQpGIn5FDLPlfZjUY-VNtcawV52V4k2UKSjU"}
+
+### New package versions:
+
+-   [{reticulate}
+    1.36.0](https://rstudio.github.io/reticulate/news/index.html){target="_blank"
+    rel="nofollow noopener"} - lots of bug fixes and updated default
+    Python version.
+
+-   [{bagyo} 0.1.1](https://panukatan.io/bagyo/){target="_blank"
+    rel="nofollow noopener"} - first CRAN release of a new data package
+    containing tropical cyclone data, useful for demo visualisations.
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-04-19-chris-brownlie-lhfle) and automatically converted, so may contain some formatting issues**

@@ -1,0 +1,90 @@
+---
+title: "This week in R (2024-10-11)"
+description: "This week in R: AI comes to Shiny development; DuckDB is still blisteringly fast; my reflections on an excellent Shiny in Production conference, and more!"
+author: "Chris Brownlie"
+date: 2024-10-11
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Here\'s some news from the world of R this week:
+
+-   **A Shiny new Assistant: **Posit have released Shiny Assistant, an
+    instance of the Claude 3.5 Sonnet LLM which is specialised in Shiny
+    app development in both R and Python. Read [the announcement
+    here](https://shiny.posit.co/blog/posts/shiny-assistant/){target="_blank"
+    rel="nofollow noopener"} and [play around with assistant
+    here.](https://gallery.shinyapps.io/assistant/){target="_blank"
+    rel="nofollow noopener"}
+
+-   **Funky file systems:** Danielle Navarro has [written a very
+    entertaining blog post about
+    {fs}](https://blog.djnavarro.net/posts/2024-10-06_fs/){target="_blank"
+    rel="nofollow noopener"}and why it is an underappreciated package in
+    R data science workflows. If you are using file paths at all or
+    developing and deploying on different OS\', you should definitely
+    read it!
+
+-   **Duck Duck loose:** Stephen Turner has [written a blog post
+    comparing
+    DuckDB](https://blog.stephenturner.us/p/duckdb-vs-dplyr-vs-base-r){target="_blank"
+    rel="nofollow noopener"} to base R and {readr}/{dplyr}, and found
+    DuckDB to be 125x faster than base R! The post includes some
+    information about {duckplyr}, the package for interacting with
+    DuckDB using {dplyr}-like syntax.
+
+-   **Tinker Tailor:** The tidymodels team have [announced the latest
+    addition to their
+    ecosystem](https://www.tidyverse.org/blog/2024/10/postprocessing-preview/#whats-to-come){target="_blank"
+    rel="nofollow noopener"} - {tailor}. This new package \"*is to
+    postprocessing as {recipes} is to preprocessing*\" and is something
+    that has been highly anticipated. The package is not yet on CRAN but
+    you can [check out the Github
+    here.](https://github.com/tidymodels/tailor){target="_blank"
+    rel="nofollow noopener"}
+
+-   **Shiny in Production: **I attended another excellent conference in
+    Newcastle this week, congrats to Jumping Rivers and all the sponsors
+    and speakers for putting on a great event. Some personal favourites
+    were: [🌞 Tan
+    Ho](https://www.linkedin.com/in/tan-ho?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAgJvb8BAtUPVKEll80g7O1UMD6RNugGlMk){target="_blank"}\'s
+    reflections on a large-scale shiny app project; [Gareth
+    Burns](https://www.linkedin.com/in/drgarethburns?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAjITXQBAw52DJvrmWl5apZtT8QeYcVbHlk){target="_blank"}\'
+    journey using shiny as an interactive education tool; [Alasdair
+    Morgan](https://www.linkedin.com/in/ACoAABGrpu8BjweS_hr5hah92ehTUOS_PvNHLLU?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABGrpu8BjweS_hr5hah92ehTUOS_PvNHLLU){target="_blank"}\'s
+    lightning talk on correcting resource usage on Posit Workbench, and
+    Katy Morgan\'s discussion on integrating Gen AI into an auditing
+    shiny app. Talks were recorded and next year\'s instalment of the
+    conference has already been confirmed so [keep an eye out here for
+    announcements.](https://shiny-in-production.jumpingrivers.com/){target="_blank"
+    rel="nofollow noopener"}
+
+-   **Fun fact:  **did you know, there were 1203 downloads of R versions
+    3.x.x or even 2.x.x [from the RStudio CRAN
+    mirror](https://github.com/r-hub/cranlogs){target="_blank"
+    rel="nofollow noopener"} in the last 30 days?! Thankfully that only
+    accounts for less than 0.2% of all R downloads in that time period.
+
+<!-- -->
+
+### New versions:
+
+-   [{data.table}
+    v1.16.2](https://github.com/Rdatatable/data.table/blob/1.16.2/NEWS.md#datatable-v1162-9-october-2024){target="_blank"
+    rel="nofollow noopener"} the latest release of the super fast table
+    package includes various bug fixes.
+
+-   [{mirai}
+    v1.3.0](https://github.com/shikokuchuo/mirai/releases/tag/v1.3.0){target="_blank"
+    rel="nofollow noopener"} - the exciting async package adds some new
+    features for working with daemons and other bug fixes.
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-10-11-chris-brownlie-9lv3e) and automatically converted, so may contain some formatting issues**

@@ -1,0 +1,115 @@
+---
+title: "5 tips for enterprise Shiny apps"
+description: "Some nuggets of wisdom from our experience of developing R shiny applications for hundreds of users"
+author: "Chris Brownlie"
+date: 2024-03-12
+from: markdown+emoji
+categories:
+- rstats
+- shiny
+- tips
+---
+
+Developing a web application is easy, developing a **good** web
+application is hard, developing a **good enterprise** web application is
+even harder. Once you start building applications that are intended for
+more than a handful of users, you start having to worry more about
+things like performance, activity logging, branding and a hundred other
+things that you didn't need to care about before.
+
+ 
+
+In this article, I\'ll give some tips and best practices for developing
+enterprise Shiny applications. Lessons that we ([the MDA team at Barnett
+Waddingham](https://www.barnett-waddingham.co.uk/services/management-decision-analytics/){target="_blank"
+rel="nofollow noopener"}) have learned in developing shiny apps for
+hundreds of users.
+
+### Tip 1: UPS (Use Packages, Stupid)
+
+![image](img/packages.jpeg)
+
+Your app should either be an R package and/or use an opinionated
+framework like
+[golem](https://thinkr-open.github.io/golem/){target="_blank"
+rel="nofollow noopener"},
+[Rhino](https://appsilon.github.io/rhino/){target="_blank"
+rel="nofollow noopener"} or
+[leprechaun](https://leprechaun.opifex.org/#/){target="_blank"
+rel="nofollow noopener"} (pick your creature of choice). Please, please,
+*please* don\'t develop your app as a single app.R file, or I will come
+into your office and [SET YOUR COMPUTER ON
+FIRE](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/){target="_blank"
+rel="nofollow noopener"}. I would strongly recommend you structure your
+app as a package, which has a plethora of benefits that have already
+been [explained by others with more street cred than
+I](https://mastering-shiny.org/scaling-packaging.html){target="_blank"
+rel="nofollow noopener"}. The key point being that you can leverage
+existing functionality in packages like {devtools} to significantly
+streamline your development process.
+
+### Tip 2: Big Brother knows best
+
+You should be tracking user activity, if nothing else so you can check
+that people are actually using your app. At Barnett Waddingham we've
+developed an in-house solution which utilises the excellent {logger} R
+package to enable simultaneous logging to Azure Log Analytics platform,
+Azure SQL Server and text log files. We have recently extended this
+using {callr} to run the logging asynchronously in a background process,
+meaning that logging everything our users do has a negligible impact on
+the performance of the app. Besides, how else are we going to create the
+one algorithm to rule them all?
+
+### Tip 3: Always judge a web app by its cover
+
+People will judge your app on how it looks. Even for users who are not
+familiar with it, the default look and feel of a shiny app can seem
+tired, boring and a bit outdated (although the [recent UI
+refresh](https://shiny.posit.co/blog/posts/shiny-r-1.8.0/){target="_blank"
+rel="nofollow noopener"} has helped). You should pick a UI framework and
+utilise it to the max, whether you take advantage of {bslib} and use the
+latest UI gadgets from Bootstrap, or pick a framework like React or Vue,
+or even if you\'re a hardcore front-end developer and write all your own
+classes and styles (i.e. you enjoy pain) - you should be spending a
+fairly significant amount of time making sure your app looks: (a)
+*nice*, (b) consistent with your brand, (c) modern and (d) *even nicer*.
+
+### Tip 4: Meticulously Maintained Modules Make Me Merry
+
+![image](modular.jpeg)
+
+As I mentioned before, using a single app.R file is liable to lead to
+pyrotechnics - but the same can be said for any R file that is thousands
+of lines long (I have seen a fair few in my time, and the pain of
+debugging them is burned deep into my soul). One of the best ways to
+avoid this torment yourself is to learn to use Shiny modules early on
+and use them well. You should have a consistent naming convention for
+your modules and files, as well as following the philosophy of
+separation of business logic and shiny logic.
+
+### Tip 5: Not another fancy futile flop
+
+Who is your audience? If your app doesn\'t solve a problem, nothing else
+matters - not even how cool it looks. One of the beautiful things about
+shiny is that you can quickly prototype and share with others to get
+feedback early on. I don\'t want to be too controversial, but if you are
+developing an app for a particular group of people in a commercial
+setting, I\'m going to suggest you\...talk to them (\*shocked
+pikachu\*). Find out what exactly they will gain from your app,
+focussing on the underlying jobs and tasks they do rather than what they
+tell you they want the app to do. This above all else is the key
+differentiator between an enterprise shiny app and a *good* enterprise
+shiny app - the technology and underlying code can almost always be
+improved, but if the app doesn\'t meet the customers\' needs, it may as
+well be a flying, invisible toothbrush.
+
+![image](success.jpeg)
+
+These 5 tips are somewhat subjective but are based on my experience
+developing these kinds of apps. If you have any questions or found this
+useful, feel free to drop me a message letting us know what you liked or
+hated about these here words, and feel free to follow as I\'ll be
+posting more about developing with R and Shiny in an enterprise setting
+in the coming weeks and months!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/5-tips-enterprise-shiny-apps-chris-brownlie-royze) and automatically converted, so may contain some formatting issues**

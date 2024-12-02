@@ -1,0 +1,96 @@
+---
+title: "This week in R (2024-04-26)"
+description: "This week in R: the newly released R 4.4.0; an awesome new Quarto extension; looking back at ShinyConf and ahead to posit::conf(); and more!"
+author: "Chris Brownlie"
+date: 2024-04-26
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Here\'s some news from the world of R this week:
+
+-   **For 4.4 on 24-4-24**: a new version of R is here! The release of
+    4.4.0 finished on Wednesday. Some notable new features include: an
+    experimental new feature for [tail-call
+    optimisation](https://en.wikipedia.org/wiki/Tail_call){target="_blank"
+    rel="nofollow noopener"}; the addition to base R of the useful
+    %\|\|% operator which previously only existed in {rlang} and a new
+    pkg2HTML() function for creating single-page reference manuals for R
+    packages. See the [full list of changes
+    here](https://cran.r-project.org/doc/manuals/r-release/NEWS.pdf){target="_blank"
+    rel="nofollow noopener"}, or Jumping Rivers' Russ Hyde's [writeup of
+    the key changes
+    here.](https://www.jumpingrivers.com/blog/whats-new-r44/){target="_blank"
+    rel="nofollow noopener"}
+
+<!-- -->
+
+-   **Quarto embedding:** James Balamuta has [developed a Quarto
+    extension
+    called](https://quarto.thecoatlessprofessor.com/embedio/){target="_blank"
+    rel="nofollow noopener"}
+    [*embedio*](https://quarto.thecoatlessprofessor.com/embedio/){target="_blank"
+    rel="nofollow noopener"}, which allows you to easily incorporate
+    different file types into Quarto HTML documents. This looks to be
+    very useful for embedding slides or PDF documents into Quarto
+    documents or websites.
+
+-   **Ducks in a row:** another week, [another benchmark showing that
+    {duckplyr} is blisteringly
+    fast](https://www.hiddenelephants.co.uk/Blog/kicking-tyres.html){target="_blank"
+    rel="nofollow noopener"} compared to the current most popular data
+    manipulation packages. This time Tim Taylor compared it to
+    {data.table} and as you will see in the write-up, there was little
+    competition in terms of speed.
+
+-   **DBI Q&A:** R-consortium published a Q&A with Kirill Muller - the
+    author of {DBI} - including his thoughts on the future of databases
+    and R. [Read the conversation
+    here.](https://www.r-consortium.org/blog/2024/04/18/building-data-highways-kirill-mullers-journey-in-enhancing-rs-database){target="_blank"
+    rel="nofollow noopener"}
+
+-   **Posit-ively excited: **the agenda for posit::conf(2024) [has now
+    been
+    released](https://reg.conf.posit.co/flow/posit/positconf24/publiccatalog/page/publiccatalog?search=&tab.day=20240812){target="_blank"
+    rel="nofollow noopener"}. The conference in August has more than 60
+    sessions across the 3 days and looks like it will be a great
+    networking and learning opportunity for those that attend.
+
+-   **ShinyConf success:** ShinyConf 2024 was a great event, with many
+    excellent speakers and interesting topics! A personal favourite of
+    mine was Deepansh Kurana\'s talk \'How I Built an API for my
+    life\' - very interesting and a great use case for {plumber},
+    {shiny} and more! You can [read more about his project on his Github
+    here.](https://github.com/DeepanshKhurana/Hrafnagud-Dynamo){target="_blank"
+    rel="nofollow noopener"}
+
+-   **Quiz: **how well do you know your Date-a types in R? Which of the
+    below will throw an error, and what will the others return? Try for
+    yourself to see if you got it right\...
+
+<!-- -->
+
+(On that last one, [see here for more
+info](https://stat.ethz.ch/pipermail/r-devel/2024-March/083254.html){target="_blank"
+rel="nofollow noopener"})
+
+### New package versions:
+
+-   [{xlcharts}
+    0.0.2](https://felixluginbuhl.com/xlcharts/){target="_blank"
+    rel="nofollow noopener"} - first releases of a new package from
+    Félix Luginbühl for creating native Excel charts.
+
+-   [{shinyWidgets}
+    0.8.6](https://dreamrs.github.io/shinyWidgets/news/index.html#shinywidgets-086){target="_blank"
+    rel="nofollow noopener"} - bug fixes and dependency updates
+
+I post updates like this every Friday so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-04-26-chris-brownlie-kbgce) and automatically converted, so may contain some formatting issues**

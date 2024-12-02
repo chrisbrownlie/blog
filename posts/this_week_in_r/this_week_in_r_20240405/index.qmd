@@ -1,0 +1,73 @@
+---
+title: "This week in R (2024-04-05)"
+description: "This week in R: DuckDB collab with Posit on an exciting new project, updates from the {tidymodels} team and some useful new guides and tutorials!"
+author: "Chris Brownlie"
+date: 2024-04-05
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! After a short Easter hiatus, here\'s some news
+from the world of R this week:
+
+-   **Quack quack: **in some very exciting news, DuckDB have teamed up
+    with the good folk at Posit and [developed
+    {duckplyr}](https://duckdb.org/2024/04/02/duckplyr.html){target="_blank"
+    rel="nofollow noopener"}, enabling integration of DuckDB into a tidy
+    R workflow. This could prove to provide significant performance
+    boosts in future and is just all-round a pretty cool project!
+
+-   **Tidy survival:** the {tidymodels} team have released yet another
+    update, this time providing functionality for performing survey
+    analysis. See the [blog post
+    here](https://www.tidyverse.org/blog/2024/04/tidymodels-survival-analysis/){target="_blank"
+    rel="nofollow noopener"} for more info.
+
+-   **Shiny shared states:  **Jacob Sobolewski has written [an
+    interesting blog
+    post](https://jakubsob.github.io/blog/the-other-way-of-lifting-state-up-from-shiny-modules/){target="_blank"
+    rel="nofollow noopener"} proposing another way to share state
+    between Shiny modules - an alternative to the relatively well
+    established methods of return values and using {R6} classes. He
+    takes inspiration from React and although this method won\'t be for
+    everyone it is cool to see people come up with novel solutions to
+    the problem of state-sharing in a shiny app.
+
+-   **Dive into packages:  **Mohsen Asgari has [written a
+    guide](https://www.linkedin.com/pulse/how-create-r-package-integrated-shiny-apps-mohsen-asgari--94she/){target="_blank"}
+    for how to get started with creating packages in R. In particular,
+    he focusses on creating a package that contains one or more shiny
+    apps.
+
+-   **12 sleeps:** with less than 2 weeks to go, the [ShinyConf agenda
+    has been
+    released](https://www.shinyconf.com/shinyconf-2024-agenda#sz-tab-45399){target="_blank"
+    rel="nofollow noopener"}. There\'s still time to register if you
+    haven\'t already!
+
+-   **Fun fact:  **in the two weeks since my last update, 527 new
+    package versions have been published to CRAN\...
+
+<!-- -->
+
+### New package versions:
+
+-   [{shinyWidgets}
+    0.8.4](https://dreamrs.github.io/shinyWidgets/news/index.html#shinywidgets-084){target="_blank"
+    rel="nofollow noopener"} - bug fixes and new widgets including
+    WinBox() for managing multiple windows.
+
+-   [{bslib}
+    0.7.0](https://rstudio.github.io/bslib/news/index.html#bslib-070){target="_blank"
+    rel="nofollow noopener"} - many bug fixes and new
+    input_task_button() widget.
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-04-05-chris-brownlie-vf5ge) and automatically converted, so may contain some formatting issues**

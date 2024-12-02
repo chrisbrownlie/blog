@@ -1,0 +1,93 @@
+---
+title: "This week in R (2024-09-27)"
+description: "This week in R: learn about S7, R-Universe and the latest RStudio release!"
+author: "Chris Brownlie"
+date: 2024-09-27
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Here\'s some news from the world of R this week:
+
+-   **OOPs, I did it again: **Veerle Eeftink-van Leemput has [written a
+    blog
+    post](https://hypebright.nl/index.php/en/2024/09/25/s7-a-new-object-oriented-programming-system-in-r-2/){target="_blank"
+    rel="nofollow noopener"} which is a great introduction to the newest
+    of R\'s Object Oriented Programming frameworks: **S7**. A successor
+    to S3 and S4, there are long term plans to integrate S7 into base R
+    so its definitely something worth knowing about!
+
+-   **New RStudio version:** the new version of RStudio IDE was released
+    this week (2024.09.0 \"Cranberry Hibiscus\"). See [here for an
+    overview of what\'s
+    new](https://posit.co/blog/rstudio-2024-09-0-whats-new/){target="_blank"
+    rel="nofollow noopener"} and [here for the full list of bug
+    fixes](https://docs.posit.co/ide/news/#fixed){target="_blank"
+    rel="nofollow noopener"}.
+
+-   **Exploring our universe:** ROpenSci had a community call this week,
+    in which Jeroen Ooms talked about
+    [R-Universe](https://docs.r-universe.dev/){target="_blank"
+    rel="nofollow noopener"}, how it has developed and how you can use
+    it today - [watch the recording
+    here](https://ropensci.org/commcalls/nov2024-r-universe/){target="_blank"
+    rel="nofollow noopener"}. I think R-Universe could well be the
+    future of sharing open source packages, so its worth checking out.
+
+-   **Interactivity ftw!:** Sherry Zhang & Dianne Cook have [written a
+    new CRAN task view for Dynamic Visualizations and Interactive
+    Graphics](https://cran.r-project.org/web/views/DynamicVisualizations.html){target="_blank"
+    rel="nofollow noopener"}*.* As with other task views, it is the
+    perfect place to start if you have a problem relating to plotting an
+    interactive graphic!
+
+-   **Get out, liers: **Steven Sanderson has [written a blog post
+    explaining how to go about removing outliers from a
+    dataset](https://www.spsanderson.com/steveondata/posts/2024-09-24/){target="_blank"
+    rel="nofollow noopener"}. This is a good place to start if you\'re
+    unsure how to about detecting and removing outliers in your data.
+
+-   **Quiz time: **do you know the answer to these questions? *Answers
+    at the bottom of the page!*
+
+**1)** What does the C in CRAN stand for?
+
+**2)** In what year was R v4.0.0 released?
+
+**3)** To the nearest thousand, how many R packages are currently
+available on CRAN?
+
+### New package versions:
+
+-   [{surveydown}
+    0.3.0](https://surveydown.org/blog/2024-09-18-new-app-design/){target="_blank"
+    rel="nofollow noopener"} - a significant API overhaul for the
+    markdown based survey package
+
+-   [{renv}
+    v1.0.9](https://github.com/rstudio/renv/releases/tag/v1.0.9){target="_blank"
+    rel="nofollow noopener"} - a couple of bug fixes, following from [a
+    larger v1.0.8
+    release](https://github.com/rstudio/renv/releases/tag/v1.0.8){target="_blank"
+    rel="nofollow noopener"} last week.
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+------------------------------------------------------------------------
+
+**(Answers to the quiz questions - spoilers ahead!)**
+
+1\) Comprehensive
+
+2\) 2020
+
+3\) At the time of publishing (10.30am on 27th September 2024), there
+are 21,420 packages on CRAN. Congrats if you said 21k!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-09-27-chris-brownlie-l8zbe) and automatically converted, so may contain some formatting issues**

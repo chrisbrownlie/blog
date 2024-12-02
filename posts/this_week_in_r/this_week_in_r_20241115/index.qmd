@@ -1,0 +1,91 @@
+---
+title: "This week in R (2024-11-15)"
+description: "Autopsies on shinylive applications; a new unified framework for branding in Quarto and Shiny; reflections on contributing to R Core; and some H.P. Lovecraft!"
+author: "Chris Brownlie"
+date: 2024-11-15
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Here\'s some news from the world of R this week:
+
+-   **Peeky-boo:** James Balamuta\'s [latest R package
+    {peeky}](https://r-pkg.thecoatlessprofessor.com/peeky/){target="_blank"
+    rel="nofollow noopener"} helps you extract, examine, and run the
+    source code of Shinylive applications. The functionality reiterates
+    the idea that in Shinylive applications \"there are no secrets\".
+    You can [check out the package on
+    Github](https://github.com/coatless-rpkg/peeky){target="_blank"
+    rel="nofollow noopener"} and start dissecting shinylive apps
+    yourself!
+
+-   **Brand(.yml) new**: the next edition of Quarto will support
+    [brand.yml - a concept from
+    Posit](https://posit-dev.github.io/brand-yml/){target="_blank"
+    rel="nofollow noopener"} which allows you to specify brand
+    guidelines for logos, colours, fonts, plots and more in a single
+    \_brand.yml file which can then be reused across your R, Python and
+    Quarto projects! Currently it is only supported in Shiny for Python,
+    but with it being [added to the prelease version of
+    Quarto](https://prerelease.quarto.org/docs/authoring/brand.html){target="_blank"
+    rel="nofollow noopener"} and [planned for R Shiny in the near
+    future](https://posit-dev.github.io/brand-yml/#fn1:~:text=Support%20for%20Shiny%20for%20R%20is%20expected%20to%20arrive%20in%20the%20very%20near%20future){target="_blank"
+    rel="nofollow noopener"} it looks to be a useful addition to the
+    Posit suite of tools.
+
+-   **Bricks and mortar**: the [{brickster}
+    package](https://databrickslabs.github.io/brickster/index.html){target="_blank"
+    rel="nofollow noopener"} for interacting with Databricks is [now on
+    CRAN](https://github.com/databrickslabs/brickster/releases/tag/v0.2.5){target="_blank"
+    rel="nofollow noopener"}! Produced by the Databricks labs team, the
+    package provides a toolkit for interacting with some of the
+    Databricks APIs and provides different options for running code
+    against Databricks from within R.
+
+-   **Dev-ing deep:** Heather Turner has [written a blog
+    post](https://www.jumpingrivers.com/blog/r-dev-day-2024/){target="_blank"
+    rel="nofollow noopener"} reflecting on the R Dev Day that ran
+    alongside Shiny in Production 2024 last month. The article gives a
+    very interesting insight into how the day works and how bugs are
+    fixed and new R features developed, as well how to get involved at
+    [next years
+    conference](https://shiny-in-production.jumpingrivers.com/#registration){target="_blank"
+    rel="nofollow noopener"}.
+
+-   **Love your craft**: Sergej Ruff has release a [new R package on
+    Github -
+    {lovecraftr}](https://github.com/SergejRuff/lovecraftr){target="_blank"
+    rel="nofollow noopener"} - which contains the text from H.P.
+    Lovecraft\'s most well-known stories, in an easily accessible
+    format. This looks to be a great resource for anyone looking to test
+    out their text analysis skills on a new dataset!
+
+-   **Quiz: **how well do you know your NAs? Guess what each of the
+    below lines will return, then test it yourself to find out! Let me
+    know your score out of 8!
+
+<!-- -->
+
+### New versions:
+
+-   [{reticulate}
+    v1.40.0](https://cran.r-project.org/web/packages/reticulate/news/news.html){target="_blank"
+    rel="nofollow noopener"} - includes support for Python 3.13, among
+    other changes and additions.
+
+<!-- -->
+
+-   [{curl}
+    6.0.0](https://cran.r-project.org/web/packages/curl/NEWS){target="_blank"
+    rel="nofollow noopener"} - new features, bug fixes and dependency
+    updates.
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-11-15-chris-brownlie-xwgte/?trackingId=wo32vj37QQu0g2R6rESPEw%3D%3D) and automatically converted, so may contain some formatting issues**

@@ -1,0 +1,100 @@
+---
+title: "This week in R (2024-11-08)"
+description: "New Posit Quarto competition with prizes up for grabs; the latest in OOP in R; developments in WebAssembly usage across R and everything Quarto Dashboards!"
+author: "Chris Brownlie"
+date: 2024-11-08
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Here\'s some news from the world of R this week:
+
+-   **Scrolly moly:** Posit have [announced the start of a Closeread
+    competition](https://posit.co/blog/closeread-prize-announcement/){target="_blank"
+    rel="nofollow noopener"}! Closeread is [a new Quarto
+    extension](https://closeread.dev/){target="_blank"
+    rel="nofollow noopener"} that helps you write scrollytelling
+    stories. Scrollytelling is a method (popular with NYT, BBC and
+    others) where concepts are built up or highlighted as the reader
+    scrolls down the page, by zooming, transitioning or altering the
+    visible element on the page as they do. Posit\'s competition calls
+    for entries on any topic to be submitted by 15th December, with some
+    cool prizes up for grabs.
+
+-   **Dash-ing through Quarto**: Posit\'s Mine Çetinkaya-Rundel has
+    [recorded a three part series on
+    Youtube](https://www.youtube.com/watch?v=HW7QbqI4fH0){target="_blank"}
+    diving into Quarto Dashboards. The functionality has been around for
+    almost a year now and these videos dive into all you can do with
+    them in both R and Python. The second and third videos look at
+    [components](https://www.youtube.com/watch?v=KdsQgwaY950){target="_blank"}
+    and
+    [theming](https://www.youtube.com/watch?v=NigWSB-jG4Y){target="_blank"}
+    respectively.
+
+-   **Lucky number S7**: a new version of R\'s latest Object Oriented
+    Programming system - meant to become a successor to S3 and S4 - has
+    been released! [Tomasz Kalinowski and Hadley Wickham have written a
+    blog
+    post](https://www.tidyverse.org/blog/2024/11/s7-0-2-0/){target="_blank"
+    rel="nofollow noopener"} accompanying this v0.2.0 release. If you
+    were unsure about S7 or had some issues with early releases now is
+    the time to take another look as it starts to be used in more CRAN
+    packages.
+
+-   **Across the webR:** George Stagg has [written a series of blog
+    posts](https://www.tidyverse.org/blog/2024/10/webr-0-4-2/){target="_blank"
+    rel="nofollow noopener"} about the current state of WebAssembly
+    in R. Running R in the browser without a server has been one of the
+    hot new areas of development this year and George covers the latest
+    in
+    [webR](https://www.tidyverse.org/blog/2024/10/webr-0-4-2/){target="_blank"
+    rel="nofollow noopener"},
+    [shinylive](https://www.tidyverse.org/blog/2024/10/shinylive-0-8-0/){target="_blank"
+    rel="nofollow noopener"} and the new [Quarto Live
+    extension](https://www.tidyverse.org/blog/2024/10/quarto-live-0-1-1){target="_blank"
+    rel="nofollow noopener"}!
+
+-   **Action required**: it has been confirmed that [Github Actions will
+    be removing
+    R](https://github.blog/changelog/2024-11-05-notice-of-breaking-changes-for-github-actions/){target="_blank"
+    rel="nofollow noopener"} from the \'ubuntu-latest\' image within a
+    couple of months for *\"maintenance reasons\".* See the [full list
+    of changes
+    here.](https://github.com/actions/runner-images/issues/10636){target="_blank"
+    rel="nofollow noopener"} Luckily R users have great alternatives for
+    using R in Github Actions (or Azure Devops):
+    [r2u](https://github.com/eddelbuettel/github-actions/tree/master/r2u-setup){target="_blank"
+    rel="nofollow noopener"} and
+    [r-lib/actions.](https://github.com/r-lib/actions/tree/v2-branch/setup-r){target="_blank"
+    rel="nofollow noopener"}
+
+-   **Fun fact: **did you know, you can use the {usethis} package to
+    setup your global .gitignore with common entries:
+
+<!-- -->
+
+### New versions:
+
+-   [{ntfy}
+    v0.0.6](https://github.com/jonocarroll/ntfy/releases/tag/v0.0.6_CRAN){target="_blank"
+    rel="nofollow noopener"} - an interesting looking newer package
+    which wraps the [ntfy.sh](http://ntfy.sh){target="_blank"
+    rel="nofollow noopener"} lightweight notification service.
+
+<!-- -->
+
+-   [{httr2}
+    v1.0.6](https://github.com/r-lib/httr2/releases/tag/v1.0.6){target="_blank"
+    rel="nofollow noopener"} - some fixes and new features for
+    interacting with AWS.
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-11-08-chris-brownlie-ln6ae) and automatically converted, so may contain some formatting issues**

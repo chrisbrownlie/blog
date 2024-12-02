@@ -1,0 +1,10 @@
+---
+title: "Data Scientist, Get Me Out of Here!"
+description: "A look at the first 24 seasons of I'm a Celeb"
+author: "Chris Brownlie"
+date: "2024-11-29"
+from: markdown+emoji
+draft: true
+---
+
+# 

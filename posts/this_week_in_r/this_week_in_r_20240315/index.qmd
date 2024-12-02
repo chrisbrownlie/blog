@@ -1,0 +1,80 @@
+---
+title: "This week in R (2024-03-15)"
+description: "This week in the world of R: high performance computing with {nanonext} et al., the new {tidyfinance} package and more of the latest updates!"
+author: "Chris Brownlie"
+date: 2024-03-15
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Here\'s some news from the world of R:
+
+-   **RStudio & Docker:** Rami Krispin has published a [tutorial on
+    running RStudio Server inside a Docker
+    container](https://towardsdatascience.com/running-rstudio-inside-a-container-e9db5e809ff8){target="_blank"
+    rel="nofollow noopener"}. A great starting point for any R users
+    wanting to learn more about Docker and the images that the [Rocker
+    project](https://rocker-project.org/){target="_blank"
+    rel="nofollow noopener"} provides.
+
+-   **Fast statistics: **Sebastian Krantz has [written an
+    article](https://arxiv.org/abs/2403.05038){target="_blank"
+    rel="nofollow noopener"} about his package
+    [{collapse}](https://sebkrantz.github.io/collapse/){target="_blank"
+    rel="nofollow noopener"}, which aims to provide fast, efficient data
+    manipulation and statistics via C/C++. An intriguing package that I
+    haven\'t delved into myself, but is growing in popularity and
+    well-maintained - v2.0.11 was released 4 days ago.
+
+-   **Financial economics:  **Christoph Scheuch et al. have released the
+    [first version of their new {tidyfinance}
+    package](https://www.tidy-finance.org/blog/r-tidyfinance-0-1-0/){target="_blank"
+    rel="nofollow noopener"} onto CRAN, providing helper functions for
+    approaching economics and finance in a tidyverse framework.
+
+-   **High performance parallel computing:** [this blog
+    post](https://www.r-consortium.org/blog/2024/03/12/isc-funded-grant-secure-tls-connections-in-nanonext-and-mirai-facilitating-high-performance-computing-in-the-life-sciences){target="_blank"
+    rel="nofollow noopener"} discusses a group of packages I\'ve been
+    keeping my eye on which are built on
+    [{nanonext}](https://shikokuchuo.net/nanonext/){target="_blank"
+    rel="nofollow noopener"}, a binding to the state of the art C
+    library \'NNG\' (Nanomessage Next Generation). Packages like
+    [{mirai}](https://shikokuchuo.net/mirai/){target="_blank"
+    rel="nofollow noopener"} and
+    [{crew}](https://wlandau.github.io/crew/){target="_blank"
+    rel="nofollow noopener"} have built on this and are starting to
+    create an exciting ecosystem of packages for efficient, elegant
+    parallel computing.
+
+-   **Open source:  **ROpenSci have released a new version of their dev
+    guide - [this blog
+    post](https://ropensci.org/blog/2024/03/11/devguide-0.9.0/){target="_blank"
+    rel="nofollow noopener"} discusses the latest changes including
+    improvements to packaging and Github guidance, as well as a Spanish
+    translation and other improvements.
+
+-   **Fun fact:  **Try running the below in R
+
+<!-- -->
+
+### New package versions:
+
+-   [{arrow}
+    v15.0.1](https://arrow.apache.org/docs/r/news/index.html#arrow-1501){target="_blank"
+    rel="nofollow noopener"} - the latest release includes bindings for
+    additional base R functions.
+
+-   [{xxhashlite}
+    v0.2.2](https://github.com/coolbutuseless/xxhashlite){target="_blank"
+    rel="nofollow noopener"} - a newer package which provides fast
+    hashing of objects via the \'xxHash\' C library.
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-03-15-chris-brownlie-ae5ue) and automatically converted, so may contain some formatting issues**

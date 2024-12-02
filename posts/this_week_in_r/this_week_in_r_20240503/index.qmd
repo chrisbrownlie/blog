@@ -1,0 +1,82 @@
+---
+title: "This week in R (2024-05-03)"
+description: "This week in R: a claimed vulnerability in R < 4.4.0 and the response to its announcement; a new Github Actions course; tidymodels updates and more!"
+author: "Chris Brownlie"
+date: 2024-05-03
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! May the 4th be (almost) with you, here\'s some
+news from the world of R this week:
+
+-   **DangeR?:** researchers at Hidden Layer have [found a potential
+    vulnerability in R \<
+    4.4.0](https://hiddenlayer.com/research/r-bitrary-code-execution/){target="_blank"
+    rel="nofollow noopener"}, which allows arbitrary code execution when
+    an RDS file is loaded. The exploit involves returning a promise
+    using the headers of the file. The vulnerability is claimed to have
+    been fixed in the latest version of R.
+
+-   **The RDS-ponse**: the response to the vulnerability mentioned above
+    has been mixed, with many of the opinion that it isn\'t a
+    vulnerability at all and/or hasn\'t been resolved in the latest
+    version of R as it is still possible to execute malicious code when
+    an RDS file is read in. The general consensus is that you should
+    *always* be very wary when reading in RDS files from an unknown
+    source. Bob Rudis has [started working on an \'rdaradar\' tool for
+    sanity checking unknown R data
+    files](https://github.com/hrbrmstr/rdaradar){target="_blank"
+    rel="nofollow noopener"} - see the README of that project for an
+    explanation of why it might not be considered a vulnerability, and
+    how these types of files can still be used in malicious attacks.
+
+-   **They have consequences**: Rami Krispin has [released a new
+    LinkedIn learning
+    course](https://www.linkedin.com/posts/rami-krispin_rstats-python-datascience-activity-7189969280883462144-glKc?utm_source=share&utm_medium=member_desktop){target="_blank"}
+    for setting up automation with Github Actions using both R and
+    Python. It looks to be a great starting point for anyone wanting to
+    automate some tedious or troublesome tasks!
+
+-   **Tidy update**: the {tidymodels} team have [published a Q1 2024
+    roundup
+    post](https://www.tidyverse.org/blog/2024/04/tidymodels-2024-q1/){target="_blank"
+    rel="nofollow noopener"}, highlighting all the changes to their
+    packages in the first few months of 2024. The article also
+    highlights some of the key changes and new package versions.
+
+-   **Fun fact:** did you know Florian Rupprecht has [a Github site for
+    tracking incoming CRAN
+    packages](https://nx10.github.io/cransubs/){target="_blank"
+    rel="nofollow noopener"}? You can use it to see packages which have
+    been submitted to CRAN and where they are in the approval process.
+
+![Screenshot of the CRAN package submission checker at [CRAN sub tracker
+(](https://nx10.github.io/cransubs/){target="_blank"
+rel="nofollow noopener"}[nx10.github.io](http://nx10.github.io){target="_blank"
+rel="nofollow noopener"}[)](https://nx10.github.io/cransubs/){target="_blank"
+rel="nofollow noopener"}](//:0){media-urn=""
+li-src="https://media.licdn.com/dms/image/v2/D5612AQHcEhRosTHweQ/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1714646359056?e=1736985600&v=beta&t=WlFrLdMz2A0fHdWhmge3DBym8cH24B6qtLe-3E2DH0c"}
+
+### New package versions:
+
+-   [{nanonext}
+    1.0.0](https://shikokuchuo.net/nanonext/news/index.html#nanonext-100){target="_blank"
+    rel="nofollow noopener"}: Charlie Gao has - with contributions from
+    Joe Cheng - released the first major version of this exciting
+    package, which includes integration with {later}.
+
+-   [{webR}
+    0.3.3](https://github.com/r-wasm/webr/releases/tag/v0.3.3){target="_blank"
+    rel="nofollow noopener"}: improvements to version identification and
+    bug fixes.
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-05-03-chris-brownlie-m1vsc) and automatically converted, so may contain some formatting issues**

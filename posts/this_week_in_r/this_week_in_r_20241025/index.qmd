@@ -1,0 +1,86 @@
+---
+title: "This week in R (2024-10-25)"
+description: "This week in R: Shiny Contest 2024 winners announced; a new Quarto extension for callouts; project management in data science and some updates from ROpenSci!"
+author: "Chris Brownlie"
+date: 2024-10-25
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Here\'s some news from the world of R this week:
+
+-   **Shiny gold medals:** Posit have [announced the winners of the 2024
+    Shiny
+    Contest](https://posit.co/blog/winners-of-the-2024-shiny-contest/){target="_blank"
+    rel="nofollow noopener"}. Congratulations to the winners David &
+    Maxime, [their app submission
+    \'Curbcut\'](https://montreal.curbcut.ca){target="_blank"
+    rel="nofollow noopener"} is a very impressive, complex and complete
+    shiny app - and a great example of everything that is possible with
+    shiny. Congratulations to all the runners up (my favourite is [\'Oh
+    my
+    bag!\'](https://forum.posit.co/t/oh-my-bag-the-heist-of-the-century-shiny-contest-submission/190322){target="_blank"
+    rel="nofollow noopener"}) and honourable mentions too!
+
+-   **Calling out Quarto:** James Balamuta has [developed a new Quarto
+    extension](https://quarto.thecoatlessprofessor.com/custom-callout/qcustom-callout-faq.html){target="_blank"
+    rel="nofollow noopener"} for adding custom callouts to your
+    document. You can specify how the new callout type should look in
+    your \_quarto.yml file and then reuse them throughout your document!
+    Currently only available for HTML outputs but definitely looks
+    useful.
+
+-   **Not R but still R**: Jumping Rivers have released the first video
+    from the London SatRdays meetup back in April. The first talk is
+    from [Andrie de Vries talking about project management in data
+    science](https://www.youtube.com/watch?v=2a24zTro3CQ){target="_blank"}.
+    Although Andrie himself says the talk is not about R, I\'ve included
+    it as it is a useful (perhaps underappreciated) topic that us R
+    developers should be thinking about!
+
+-   **Spaceships and rockets**: ROpenSci have updated [the documentation
+    for the R-Universe
+    API,](https://docs.r-universe.dev/browse/api.html){target="_blank"
+    rel="nofollow noopener"} and Maëlle and Jeroen have also developed a
+    new R package to simplify accessing it. The package isn\'t yet on
+    CRAN but you can [see it and install it from Github
+    here.](https://github.com/ropensci/universe/){target="_blank"
+    rel="nofollow noopener"} The package has functions for opting into
+    to a universe and extracting data on packages.
+
+-   **Get involved**: ROpenSci have [announced some new
+    activities](https://ropensci.org/blog/2024/10/22/first-time-contributions/){target="_blank"
+    rel="nofollow noopener"} aimed at people wanting to make their first
+    contribution to open source software! They will be organising a
+    community call in January and a mini hackathon to help people get
+    over the intimidation of their first contribution. They are
+    currently looking for maintainers of ROpenSci packages to help get
+    involved.
+
+-   **Fun fact: **did you know, since R v4.0.0 you can specify raw
+    strings in base R using the r\"( notation? This can make it easier
+    to use both single and double quotes in the same string.
+
+<!-- -->
+
+### New versions:
+
+-   [{duckdb}
+    v1.1.1.9001](https://duckdb.r-universe.dev/duckdb){target="_blank"
+    rel="nofollow noopener"} - (on R-universe, soon to be on CRAN) new
+    feature to interrupt long-running queries in RStudio with Ctrl+C.
+
+-   [{drat}
+    0.2.5](https://dirk.eddelbuettel.com/blog/2024/10/21/#drat_0.2.5){target="_blank"
+    rel="nofollow noopener"} - some small updates to Dirk
+    Eddelbuettel\'s package for managing local R package repositories.
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-10-25-chris-brownlie-zqsie) and automatically converted, so may contain some formatting issues**

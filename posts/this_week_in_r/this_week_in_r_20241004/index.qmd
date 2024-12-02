@@ -1,0 +1,89 @@
+---
+title: "This week in R (2024-10-04)"
+description: "This week in R: Hacktoberfest begins; how to use the trendiest data tools like Parquet and DuckDB and a look ahead to the Shiny apps of 2025!"
+author: "Chris Brownlie"
+date: 2024-10-04
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Here\'s some news from the world of R this week:
+
+-   **Tricks and Treats: **as part of
+    [Hacktoberfest](https://hacktoberfest.com){target="_blank"
+    rel="nofollow noopener"}, Jonathan Carroll has created a repository
+    aimed at helping R users get started with Github and open source by
+    providing a
+    {[safespace](https://github.com/jonocarroll/safespace){target="_blank"
+    rel="nofollow noopener"}} for them to try creating pull requests. If
+    you\'ve ever wanted to get started with Github or open source but
+    weren\'t sure where to start, check out his [blog post
+    here.](https://jcarroll.com.au/2024/10/01/a-safe-space-for-learning-how-to-make-pull-requests/){target="_blank"
+    rel="nofollow noopener"}
+
+-   **Monopoly skills:** Etienne Bacher has [written a blog
+    post](https://www.etiennebacher.com/posts/2024-10-01-using-property-testing-in-r/){target="_blank"
+    rel="nofollow noopener"} explaining property-based testing in R,
+    using the
+    {[quickcheck](https://armcn.github.io/quickcheck/){target="_blank"
+    rel="nofollow noopener"}} package. This kind of testing integrates
+    seamlessly with {testthat} and is useful to know as an alternative
+    way to approach unit tests!
+
+-   **Hardcore Parquet!:** Ted Laderas has [published an
+    introduction](https://hutchdatascience.org/data_snacks/r_snacks/parquet.html#a-titanic-parquet-file){target="_blank"
+    rel="nofollow noopener"} to using parquet and DuckDB to get
+    blistering fast results on large datasets. I think this combination
+    could well be the future of large dataset manipulation in R and Ted
+    gives a good introduction, using quarto-live to include runnable
+    chunks of R code!
+
+-   **A Shiny future:** Jasmine Daly has [written up a
+    forecast](https://www.dalyanalytics.com/blog/shiny-trends-2025){target="_blank"
+    rel="nofollow noopener"} for what will be the biggest trends in
+    Shiny development in 2025. I have to say I agree on the whole,
+    particularly that we\'ll see more serverless apps with
+    {[shinylive](https://posit-dev.github.io/r-shinylive/){target="_blank"
+    rel="nofollow noopener"}} and more large data manipulation with
+    {[duckdb](https://github.com/duckdb/duckdb-r){target="_blank"
+    rel="nofollow noopener"}}.
+
+-   **Covering all bases: **Posit have [produced an
+    article](https://posit.co/blog/databases-with-posit/){target="_blank"
+    rel="nofollow noopener"} outlining the best way to connect to
+    DuckDB, Snowflake or Databricks databases, in both R and Python.
+    Very useful if you are using any of these DBMSs in an enterprise
+    setting.
+
+-   **Clean up the books:** R-Consortium\'s latest Tidy Finance webinar
+    is next Wednesday 9th October, and will cover evaluating performance
+    with the Capital Asset Pricing Model in R. You can [sign up to the
+    webinar](https://r-consortium.org/webinars/tidy-finance-webinar-series.html#evaluate-performance-using-the-capital-asset-pricing-model){target="_blank"
+    rel="nofollow noopener"} here.
+
+-   **Fun fact:  **did you know, base R has functionality for working
+    with Roman numerals\...
+
+<!-- -->
+
+### New versions:
+
+-   [vapour
+    v0.0.6](https://github.com/vapourlang/vapour/releases/tag/v0.0.6){target="_blank"
+    rel="nofollow noopener"} - the latest release of the new \'typed
+    superset of R\' contains various bug fixes and features.
+
+-   [{targets}
+    v1.8.0](https://github.com/ropensci/targets/releases/tag/1.8.0){target="_blank"
+    rel="nofollow noopener"} - several updates in this latest version of
+    the hugely popular pipelines package.
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-10-04-chris-brownlie-jo3ve) and automatically converted, so may contain some formatting issues**

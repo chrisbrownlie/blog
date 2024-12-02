@@ -3,7 +3,28 @@
     "listing": "/index.html",
     "items": [
       "/posts/welcome/index.html",
-      "/posts/this_week_in_r_20240920/index.html"
+      "/posts/advent_of_code_2024/day_2/index.html",
+      "/posts/advent_of_code_2024/day_1/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20241129/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20241122/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20241115/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20241108/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20241101/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20241025/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20241018/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20241011/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20241004/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20240927/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20240920/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20240503/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20240426/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20240419/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20240412/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20240405/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20240322/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20240315/index.html",
+      "/posts/5_tips_for_enterprise_shiny_apps/index.html",
+      "/posts/this_week_in_r/this_week_in_r_20240308/index.html"
     ]
   }
 ]

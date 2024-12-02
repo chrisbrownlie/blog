@@ -1,0 +1,84 @@
+---
+title: "This week in R (2024-11-22)"
+description: "Multiple developments in the world of Quarto; yet more LLM integration in R; a brand new widget for your shiny apps and the latest from LondonR!"
+author: "Chris Brownlie"
+date: 2024-11-22
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Here\'s some news from the world of R this week:
+
+-   **You\'re a wizard, Quarto:** Mickaël Canouil has created [a new VS
+    Code
+    extension](https://github.com/mcanouil/quarto-wizard){target="_blank"
+    rel="nofollow noopener"} which helps you to manage your Quarto
+    projects. It includes functionality for installing extensions and
+    creating new documents which may come in handy if you\'re writing
+    Quarto documents in VS Code (or in future, Positron).
+
+-   **Scouting for bars**: David Granjon has [developed a new R package
+    {scoutbaR}](https://github.com/cynkra/scoutbaR){target="_blank"
+    rel="nofollow noopener"} which wraps the \'scoutbar\' React widget.
+    The package makes it easy to include a scoutbar element in your
+    shiny app - an exciting way to modernise and improve your existing
+    shiny apps. C[heck out the
+    documentation](https://cynkra.github.io/scoutbaR/index.html){target="_blank"
+    rel="nofollow noopener"} for an example of what it looks like.
+
+-   **You Quarto know this**: Posit\'s Charlotte Wickham has published
+    [a series of video
+    tutorials](https://www.youtube.com/watch?v=l7r24gTEkEY&feature=youtu.be){target="_blank"}
+    focussed around Quarto websites. They cover the basics of setting up
+    a homepage and navigating between pages, to customising with CSS and
+    using the inbuilt listings functionality. If you\'re looking to
+    create a new website or blog and want to use Quarto to do so, I
+    recommend checking out these tutorials to get started!
+
+-   **PaLLM of your hand:** Simon Couch has [developed a new R package
+    {pal}](https://simonpcouch.github.io/pal/index.html){target="_blank"
+    rel="nofollow noopener"} which aims to provide a selection of
+    LLM-backed helpers for completing repetitive tasks in R. One example
+    is an addin that generates roxygen documentation for your functions,
+    giving you a good starting point to build from. Usage of LLMs
+    continues to increase across the board in R!
+
+-   **LondonR**: last week I attended the LondonR meetup, where Hannah
+    Frick gave an excellent talk on the state of the union for
+    {tidymodels}, including the {tailor} and {sparsevctrs} packages. You
+    can [see Hannah\'s slides
+    here](https://hfrick.github.io/2024-LondonR/#/title-slide){target="_blank"
+    rel="nofollow noopener"}, and shout out to Datacove for organising
+    the meetup!
+
+-   **Fun fact: **did you know you can use [{stringr}s
+    str_view()](https://stringr.tidyverse.org/reference/str_view.html){target="_blank"
+    rel="nofollow noopener"} function to see how your regex pattern
+    matches a string?
+
+<!-- -->
+
+### New versions:
+
+-   [{galah}
+    v2.1.0](https://github.com/AtlasOfLivingAustralia/galah-R/releases/tag/v2.1.0){target="_blank"
+    rel="nofollow noopener"} - improvements and documentation updates
+    for the very useful biodiversity data package.
+
+<!-- -->
+
+-   [{tinytable}
+    0.6.0](https://github.com/vincentarelbundock/tinytable/blob/main/NEWS.md){target="_blank"
+    rel="nofollow noopener"} - internal refactors, bug fixes and
+    consistency improvements to this small, minimalistic table drawing
+    package.
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-11-22-chris-brownlie-lvouc) and automatically converted to qmd, so may contain some formatting issues**

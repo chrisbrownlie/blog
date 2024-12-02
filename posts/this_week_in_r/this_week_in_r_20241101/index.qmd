@@ -1,0 +1,85 @@
+---
+title: "This week in R (2024-11-01)"
+description: "This week: an R user BlueSky migration; posit::conf(2024) materials; favicons in shiny apps; card games in R; dynamic web scraping and a new Positron site!"
+author: "Chris Brownlie"
+date: 2024-11-01
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Here\'s some news from the world of R this week:
+
+-   **Conf Content:** the materials from posit::conf(2024) have been
+    released! Over 30 hours of recordings and workshops covering all
+    manner of R-related topics. [See the extensive list of content
+    here!](https://posit.co/blog/talks-and-workshops-from-posit-conf-2024/){target="_blank"
+    rel="nofollow noopener"}
+
+-   **\'Ex\'-social media**: the last couple of weeks have seen many R
+    users moving their social media presence to BlueSky (mainly from X).
+    Since the demise of Twitter, R enthusiasts have been spread across
+    many different platforms, but it looks like many are starting to
+    concentrate on BlueSky - the Twitter-like interface is probably a
+    factor. Jeremy Allen has also [created a starter pack of the best R
+    people](https://go.bsky.app/Ki7PjpS){target="_blank"
+    rel="nofollow noopener"} to follow, which you can use to easily get
+    started in the community.
+
+-   **Awesome icons:** Jon Harmon has [developed a new package
+    {favawesome}](https://github.com/shinyworks/favawesome){target="_blank"
+    rel="nofollow noopener"} for easily adding font awesome icons as
+    favicons in shiny and other HTML pages. If you\'re developing a
+    shiny app this gives a nice easy way to make your app look a bit
+    more professional and doesn\'t add any additional dependencies.
+
+-   **CaRd games**: Matt Dray has [written a blog
+    post](https://www.rostrum.blog/posts/2024-10-25-not-balatro/index.html){target="_blank"
+    rel="nofollow noopener"} explaining how he used the {sortable} R
+    package to create a card game in shiny. An entertaining read from
+    the man who has championed using R to create games (\"[R is a game
+    engine. Fight
+    me.](https://www.rostrum.blog/posts/2023-04-02-splendid-r-games/){target="_blank"
+    rel="nofollow noopener"}\") - I highly recommend you check it out!
+
+-   **Chromote control**: James Balamuta has [recorded a
+    video](https://www.youtube.com/watch?v=30AOpjLeOyI){target="_blank"}
+    on scraping data from a dynamically generated website using the
+    {chromote} package. This is a very useful tutorial for a common
+    difficult task when trying to scrape data from the web.
+
+-   **Pitching Positron**: a [new Positron website has
+    appeared](https://positron.posit.co/){target="_blank"
+    rel="nofollow noopener"} with some more information on what Positron
+    is and who it is aimed at. Although it is still very early days and
+    the site is minimal, it does give some background on the IDE and how
+    to get started with it.
+
+-   **Fun fact: **did you know, you can infinitely nest environments?
+    Not that you would want to\...but it does give some insight into
+    [how environments
+    work.](https://adv-r.hadley.nz/environments.html){target="_blank"
+    rel="nofollow noopener"}
+
+<!-- -->
+
+### New versions:
+
+-   [{duckdb}
+    v1.1.2](https://github.com/duckdb/duckdb-r/blob/main/NEWS.md#duckdb-112){target="_blank"
+    rel="nofollow noopener"} - update to v1.1.2 of duckdb, a couple of
+    new features and bug fixes
+
+-   [{fs}
+    v1.6.5](https://github.com/r-lib/fs/releases/tag/v1.6.5){target="_blank"
+    rel="nofollow noopener"} - some bug fixes to this package that
+    featured in This week in R a couple of weeks ago!
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-11-01-chris-brownlie-kshpe) and automatically converted, so may contain some formatting issues**

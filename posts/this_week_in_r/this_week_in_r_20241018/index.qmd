@@ -1,0 +1,82 @@
+---
+title: "This week in R (2024-10-18)"
+description: "This week: a look at the new Positron IDE; including data in R packages; a look ahead to R/Pharma 2024; an introduction to Monads; and Quarto rendering tips!"
+author: "Chris Brownlie"
+date: 2024-10-18
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Here\'s some news from the world of R this week:
+
+-   **Hello Positron:** Julia Silge has [released a video introducing
+    Positron](https://www.youtube.com/watch?v=5BojM5EciPs){target="_blank"},
+    the new IDE from Posit which is a fork of VSCode. In the screencast
+    Julia shows the key parts of the IDE using a TidyTuesday dataset on
+    orcas. If you\'ve been wondering about Positron since it went into
+    public beta then check out the video!
+
+-   **Give me data:** Yohann Mansiaux has [written a blog
+    post](https://rtask.thinkr.fr/beyond-functions-how-to-enrich-an-r-package-with-data/){target="_blank"
+    rel="nofollow noopener"} detailing the ways you can include data in
+    your R package, and why you should do so! This is an often
+    overlooked element of R package development and Yohann gives a good
+    overview of the topic.
+
+-   **Pharmers Unite**: R/Pharma 2024 starts next week and [they have
+    announced the 19 free
+    workshops](https://rinpharma.com/post/2024-10-13-workshops/){target="_blank"
+    rel="nofollow noopener"} that will be delivered over the course of
+    the event. These workshops will be recorded and released on Youtube
+    at a later point. I highly recommend you check out the list as many
+    of them will be invaluable to all R developers, not just those in
+    pharma. You can also still [register for the event here for
+    free!](https://events.zoom.us/ev/AvobJEOTVwkUnH6_TgLZDZJauk4dxfm5jCG8JFNN9zukOcsVLvTN~AmO5XY5HRBcxkKG6Hga1aXZaYtpBSER6jHms1seP-NNOA0dhcQZUGJ2NWg){target="_blank"
+    rel="nofollow noopener"}
+
+-   **Right in the monads**: Jonathan Carroll has [published a blog
+    post](https://jcarroll.com.au/2024/10/18/monads-in-r/){target="_blank"
+    rel="nofollow noopener"} exploring the world of monads! The complex
+    statistical concept is very important in computing and Jonathan
+    provides an accessible introduction with examples in R, as well as
+    introducing [a new {monads}
+    package](https://github.com/jonocarroll/monads){target="_blank"
+    rel="nofollow noopener"} to help with exploring the topic.
+
+-   **Quarto to go**: Pete Jones has [written a blog
+    post](https://petejon.es/posts/2024-10-14-move-quarto-output/){target="_blank"
+    rel="nofollow noopener"} explaining how to resolve a specific but
+    potentially very irritating issue with rendering Quarto outputs to a
+    different folder than the source directory. If you\'ve ever tried to
+    render to a specific output location and not been happy with the
+    results, give Pete\'s post a read!
+
+-   **Fun fact: **of the more than 14,000 packages on CRAN that depend
+    on a minimum R version, v3.5.0 is the most common with nearly 3,000
+    packages requiring it. Additionally, 3.x.x is the most common
+    required major version (63% of the 14k) and three packages have a
+    minimum R version requirement of 0.x!
+
+<!-- -->
+
+### New versions:
+
+-   [{openxlsx2)
+    v1.10](https://github.com/JanMarvin/openxlsx2/releases/tag/v1.10){target="_blank"
+    rel="nofollow noopener"} bug fixes and some new features for the
+    \'swiss knife for working with openxml formats\'.
+
+-   [{shiny.telemetry}
+    v0.3.1](https://appsilon.github.io/shiny.telemetry/news/index.html#shinytelemetry-031){target="_blank"
+    rel="nofollow noopener"} - Appsilon\'s shiny logging package gets a
+    new *log_errors* method and some bug fixes.
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-10-18-chris-brownlie-lgpme) and automatically converted, so may contain some formatting issues**

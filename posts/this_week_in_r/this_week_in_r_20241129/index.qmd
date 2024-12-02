@@ -1,0 +1,76 @@
+---
+title: "This week in R (2024-11-29)"
+description: "Quarto v1.6 released with an exciting new features; integrate BlueSky with your Quarto website; learn Parquet with ROpenSci and get started with OIDC in R!"
+author: "Chris Brownlie"
+date: 2024-11-29
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Here\'s some news from the world of R this week:
+
+-   ***Brand* new Quarto:** earlier this week, Quarto v1.6 was
+    officially released! The new version brings with it some new
+    features for RevealJS presentations, new functionality for landscape
+    content and perhaps most excitingly, support for the brand.yml - a
+    single file that defines branding and styling across formats! Read
+    the [release notes
+    here.](https://quarto.org/docs/blog/posts/2024-11-25-1.6-release/){target="_blank"
+    rel="nofollow noopener"}
+
+-   **Parquet life**: ROpenSci have announced their Social Coworking
+    event for January, which is titled [\'Working with Parquet in
+    R\'](https://ropensci.org/events/coworking-2025-01/){target="_blank"
+    rel="nofollow noopener"}. The event will be hosted by Rainer Krug
+    and involve two hours of learning about parquet in a flexible,
+    pressure-free environment! [See here for more
+    information](https://ropensci.org/blog/2023/06/21/coworking/){target="_blank"
+    rel="nofollow noopener"} on what ROpenSci\'s Social Coworking events
+    entail.
+
+-   **AuthRing:** Josiah Parry has [written up a
+    guide](https://josiahparry.com/posts/2024-11-28-httr2-oidc#accessing-claims){target="_blank"
+    rel="nofollow noopener"} on using OpenID Connect (OIDC)
+    authentication from R. OIDC is based on OAuth 2.0 and the article
+    gives some great practical guidance on how you can use the {httr2}
+    package for integrating with this type of authentication. Josiah
+    does a great job of simplifying a fairly complex subject!
+
+-   **Bluesky ahead**: James Balamuta has [created a new Quarto
+    extension](https://quarto.thecoatlessprofessor.com/bluesky-comments/){target="_blank"
+    rel="nofollow noopener"} for seamlessly integrating Bluesky posts
+    into your documents. You can use this to include replies on Bluesky
+    in your Quarto document. As the new social media platform continues
+    to rapidly grow, this new extension provides a great way to
+    encourage discussion and integrate Bluesky into your sites!
+
+-   **Fun fact: **did you know base R has functions for solving the
+    [*birthday
+    problem*](https://en.wikipedia.org/wiki/Birthday_problem){target="_blank"
+    rel="nofollow noopener"}?
+
+<!-- -->
+
+### New versions:
+
+-   [{usethis}
+    v3.1.0](https://github.com/r-lib/usethis/releases/tag/v3.1.0){target="_blank"
+    rel="nofollow noopener"} - vignette and article helpers now support
+    using Quarto.
+
+<!-- -->
+
+-   [{surveydown}
+    v0.5.2](https://github.com/surveydown-dev/surveydown/blob/main/NEWS.md){target="_blank"
+    rel="nofollow noopener"} - now supports using cookies to restore
+    survey state.
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-11-29-chris-brownlie-ox3ee) and automatically converted to qmd, so may contain some formatting issues**

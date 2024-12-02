@@ -1,0 +1,67 @@
+---
+title: "This week in R (2024-03-08)"
+description: "Some news this week from the world of R: web scraping with {rvest} and tidyverse; shiny apps for data editing; webR/JS developments and more!"
+author: "Chris Brownlie"
+date: 2024-03-08
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Here\'s some news from the world of R:
+
+-   **Web scraping: ** Hadley Wickham gave a talk last night about web
+    scraping using {rvest} and the tidyverse, I\'m not sure if it was
+    recorded (can\'t find anything online) but the [slides are
+    here](https://github.com/hadley/web-scraping/blob/main/rvest.pdf){target="_blank"
+    rel="nofollow noopener"} and seem well-developed so might be of
+    interest.
+
+-   **Data editing shiny app:  **David Granjon is working on a (still
+    very experimental) package which would allow you to [quickly create
+    a shiny app that sits on top of a database and edits it via an
+    app](https://github.com/DivadNojnarg/shiny-edit-data){target="_blank"
+    rel="nofollow noopener"}. It's a pretty common use case for shiny
+    but I imagine generalising it will be *hard* so I\'d be interested
+    to know if any of you dig into it at all!
+
+-   **webR:  **Colin Fay has continued his series of blog posts looking
+    into {webR} - [the latest
+    one](https://colinfay.me/webrcli-and-spidyr/){target="_blank"
+    rel="nofollow noopener"} discusses the best way to structure a
+    project that interweaves R and JS seamlessly. If you\'re interested
+    in the development of {webR} and running R in the browser, I\'d
+    recommend checking out the rest of his blog posts too.
+
+-   **Open source:  **Julia Silge & ROpenSci are [looking for
+    volunteers](https://ropensci.org/blog/2024/03/01/qualtrics-call-help/){target="_blank"
+    rel="nofollow noopener"} to help get involved with
+    testing/developing the {qualtRics} package (something that we at BW
+    currently use). Sounds like it could a good opportunity for someone
+    wanting to dip their toe into open source development.
+
+-   **Fun fact:  **Try running the below in R (or replace hello with
+    anything else)...
+
+<!-- -->
+
+### New package versions:
+
+-   [{shinyWidgets}
+    0.8.2](https://dreamrs.github.io/shinyWidgets/news/index.html#shinywidgets-082){target="_blank"
+    rel="nofollow noopener"} - added support for dropdown inputs with
+    virtual scroll.
+
+-   [{renv}
+    1.0.5](https://rstudio.github.io/renv/news/index.html#renv-105){target="_blank"
+    rel="nofollow noopener"} - some minor bug fixes as a follow up to
+    1.0.4 a couple weeks ago which added some new features.
+
+I\'ll be looking to start posting updates like this every week so if
+you\'re interested feel free to follow. Comment below if there\'s
+something interesting you found out this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-chris-brownlie-rnjve) and automatically converted, so may contain some formatting issues**

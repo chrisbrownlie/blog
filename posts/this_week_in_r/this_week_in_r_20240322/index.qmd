@@ -1,0 +1,80 @@
+---
+title: "This week in R (2024-03-22)"
+description: "This week in the world of R, including: increasing fairness in machine learning; package testing best practices and browser-based R! 💥"
+author: "Chris Brownlie"
+date: 2024-03-22
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Happy Friday everyone! Here\'s some news from the world of R:
+
+-   **Fair ML:** the tidymodels team released some new functionality
+    this week centred around increasing fairness in statistical models.
+    It involved some updates to {yardstick} and {tune} - see [the blog
+    post](https://www.tidyverse.org/blog/2024/03/tidymodels-fairness/){target="_blank"
+    rel="nofollow noopener"} for more details. Another good sign for
+    tidymodels users that the ecosystem is heading in the right
+    direction.
+
+-   **Wet testing:** Maelle Salmon has [written up an
+    overview](https://ropensci.org/blog/2024/03/18/dry-damp/){target="_blank"
+    rel="nofollow noopener"} of an ROpenSci training session, explaining
+    two useful acronyms to remember: DRY (Don\'t Repeat Yourself) and
+    DAMP (Descriptive and Meaningful Phrases), specifically in
+    application to writing tests for an R package. Definitely worth a
+    read for any R users who are newer to writing tests - or writing
+    code in general! Maelle has also [written a great
+    update](https://blog.r-hub.io/2024/03/21/mocking-new-take){target="_blank"
+    rel="nofollow noopener"} on the state of mocking for R package
+    testing this week, which I also recommend checking out.
+
+-   **Quarto, webR + shinylive:  **James Balamuta has [developed a
+    tutorial](https://github.com/coatless-tutorials/quarto-webr-with-quarto-shinylive){target="_blank"
+    rel="nofollow noopener"} giving an example of how to integrate both
+    {quarto-webr} and {quarto-shinylive} Quarto extensions into the same
+    document. This is a very cool look at the future of browser-based R
+    and for me brings to life the possibilities - particularly around
+    learning/teaching. The document itself can be seen
+    [here](https://tutorials.thecoatlessprofessor.com/quarto-webr-with-quarto-shinylive/){target="_blank"
+    rel="nofollow noopener"}, hosted on James\' website.
+
+-   **(En)coding:  **[Gábor Csárdi\'s R Encoding FAQ
+    repository](https://github.com/gaborcsardi/rencfaq){target="_blank"
+    rel="nofollow noopener"} has had some minor updates this past week.
+    If you have ever run into an error in your code that has taken days
+    to resolve, and when you resolve it you feel like you still don\'t
+    know why, and that error has been related to encoding (I\'m speaking
+    from experience here, if you hadn\'t guessed) - then I highly
+    recommend bookmarking this repository and taking a look at some of
+    the resources.
+
+-   **Fun fact:  **what would you expect the output of the two lines
+    below to be? Run them and see for yourself\...
+
+<!-- -->
+
+### New package versions:
+
+-   [{zstdlite}
+    0.2.7](https://github.com/coolbutuseless/zstdlite){target="_blank"
+    rel="nofollow noopener"} - a newer package from [Mike
+    (@coolbutuseless)](https://github.com/coolbutuseless){target="_blank"
+    rel="nofollow noopener"} which uses the C-based zstd library for
+    fast and configurable (de/)serialisation of R objects. Possibly a
+    better alternative to saveRDS()/readRDS() in some cases.
+
+-   [{mirai}
+    0.13.1](https://shikokuchuo.net/mirai/news/index.html#mirai-0131){target="_blank"
+    rel="nofollow noopener"} - a fix for working with {targets} and
+    customisation of serialisation.
+
+I\'ll be posting updates like this every week so if you\'re interested
+feel free to follow. Comment below if there\'s something interesting you
+found out this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-03-22-chris-brownlie-jolge) and automatically converted, so may contain some formatting issues**

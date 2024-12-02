@@ -1,14 +1,16 @@
 ---
-title: "blogdotcb"
+title: "All articles"
 listing:
   contents: posts
-  sort: "date desc"
+  sort: 
+    - pinned
+    - "date desc"
   type: default
   categories: true
   sort-ui: false
   filter-ui: false
 page-layout: full
-title-block-banner: true
+title-block-banner: false
 ---
 
 

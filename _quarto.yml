@@ -1,15 +1,18 @@
 project:
   type: website
+  resources:
+    - assets
 
 website:
-  title: "blogdotcb"
+  title: "blog.cb"
   navbar:
     right:
-      - about.qmd
       - icon: github
         href: https://github.com/chrisbrownlie
       - icon: linkedin
         href: https://www.linkedin.com/in/cnbrownlie/
+      - text: "{{< iconify simple-icons:bluesky >}}"
+        href: https://bsky.app/profile/bsky.chrisbrownlie.com
 format:
   html:
     theme: zephyr

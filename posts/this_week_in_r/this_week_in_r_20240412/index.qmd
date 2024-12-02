@@ -1,0 +1,69 @@
+---
+title: "This week in R (2024-04-12)"
+description: "This week in the world of R - new benchmarking increases {duckplyr} excitement; the future of R-hub is here; plus new versions of key packages are released!"
+author: "Chris Brownlie"
+date: 2024-04-12
+from: markdown+emoji
+categories:
+- rstats
+- "this week in r"
+---
+
+![](/assets/this_week_in_r.png){height=90% width=90% fig-align=center fig-alt="Logo for This week in R. Numbers and graphs on a blue background with the text 'This week in R'"}
+
+Another Friday, another R-eview! Here\'s some news from the world of R
+this week:
+
+-   **Quick quack: **Art Steinmetz [published an interesting
+    article](https://outsiderdata.netlify.app/posts/2024-04-10-the-truth-about-tidy-wrappers/benchmark_wrappers.html){target="_blank"
+    rel="nofollow noopener"} looking at the various different tidyverse
+    wrappers around powerful database engines, as a solution for working
+    with large data in the tidyverse. The results are in and the new
+    {duckplyr} wrapper around DuckDB seems to blow the competition out
+    of the water in terms of speed.
+
+-   **Catching the worm:** early bird tickets for EARL (Enterprise
+    Applications of the R Language) conference in Brighton this
+    September have been released this week. [See here for more
+    information](https://www.r-consortium.org/blog/2024/04/08/earl-early-bird-tickets-are-now-available){target="_blank"
+    rel="nofollow noopener"} including the keynote speakers.
+
+-   **Databases:  **Hadley Wickham has [written a release
+    article](https://www.tidyverse.org/blog/2024/04/dbplyr-2-5-0/){target="_blank"
+    rel="nofollow noopener"} for {dbplyr} v2.5.0 which was released last
+    month. The new release contains improvements to syntax for
+    specifying tables as well as some minor improvements to SQL
+    generation.
+
+-   **R-hub evolution:  **Gabor Csardi has announced that R-hub is being
+    retired in favour of the sparkly new modernised R-hub v2. This new
+    iteration of R-hub is built on Github Actions and [Gabor\'s article
+    here
+    explains](https://blog.r-hub.io/2024/04/11/rhub2/){target="_blank"
+    rel="nofollow noopener"} how to move from v1 to v2.
+
+-   **Quiz:** what will be the output of the two lines of code below,
+    and why? Try it yourself and find out!
+
+<!-- -->
+
+### New package versions:
+
+-   [{webr}
+    0.3.2](https://github.com/r-wasm/webr/releases/tag/v0.3.2){target="_blank"
+    rel="nofollow noopener"} - additional features and bug fixes
+
+-   [{renv}
+    1.0.7](https://rstudio.github.io/renv/news/index.html#renv-107){target="_blank"
+    rel="nofollow noopener"} - a whole bunch of bug fixes
+
+-   [{pkgdown}
+    2.0.8](https://pkgdown.r-lib.org/news/index.html#pkgdown-208){target="_blank"
+    rel="nofollow noopener"} - updating {bslib} compatibility and newer
+    bootstrap features
+
+I post updates like this every week so if you\'re interested feel free
+to follow. Comment below if there\'s something interesting you found out
+this week too!
+
+**This was originally posted on Linkedin [here](https://www.linkedin.com/pulse/week-r-2024-04-12-chris-brownlie-rofhe) and automatically converted, so may contain some formatting issues**
