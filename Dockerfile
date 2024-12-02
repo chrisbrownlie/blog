@@ -3,8 +3,6 @@ FROM analythium/r2u-quarto:20.04 AS builder
 COPY . /app
 WORKDIR /app
 RUN mkdir output
-WORKDIR output
-RUN quarto add mcanouil/quarto-iconify
 WORKDIR /app
 RUN quarto render --output-dir output
 
