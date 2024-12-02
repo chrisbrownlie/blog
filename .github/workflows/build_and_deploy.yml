@@ -36,7 +36,5 @@ jobs:
          tags: christopherbrownlie/blog:latest
      - name: Deploy the app
        uses: digitalocean/app_action/deploy@v2
-       env:
-         SAMPLE_DIGEST: ${{ steps.push.outputs.digest }}
        with:
          token: ${{ secrets.DO_ACCESS_TOKEN }}
