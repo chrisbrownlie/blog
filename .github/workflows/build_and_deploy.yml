@@ -8,12 +8,12 @@ permissions:
   contents: read
   packages: write
 
+env:
+  RENV_PATHS_ROOT: ~/.cache/R/renv
 
 jobs:
  build-push-deploy-image:
    runs-on: ubuntu-20.04
-   env:
-    RENV_PATHS_ROOT: ~/.cache/R/renv
    steps:
      - name: Checkout repository
        uses: actions/checkout@v4
