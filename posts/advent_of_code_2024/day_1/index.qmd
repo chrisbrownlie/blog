@@ -14,10 +14,13 @@ categories:
 I've decided to try and do Advent of Code this year, and see how far I get before
 work and/or life gets in the way!
 
-I plan to use R mainly, and I think generally there are three ways to
-approach (or three choices to prioritise for) AoC solutions: speed, code golf 
-or readability. I'll be going for the latter of
-the three so will be using tidyverse packages where possible.
+I plan to use R mainly, and it seems to me that most people tend to focus on
+solutions that optimise performance or minimise lines of code (i.e. code golf),
+so I'm going to try something different and focus on readability. The goal is for even 
+beginner programmers (even those who aren't super familiar with R) to be able to 
+understand how I'm solving each problem. To that end, I'll be relying heavily
+on tidyverse packages and preferring tidyverse solutions to base R where
+possible.
 
 ![](/assets/advent_of_code.png){height=90% width=90% fig-align=center fig-alt="Logo for Advent of Code"}
 
