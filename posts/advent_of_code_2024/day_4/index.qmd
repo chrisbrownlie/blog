@@ -1,0 +1,222 @@
+---
+title: "AOC 2024: Day 4"
+description: "Day 4 of the Advent of Code 2024: 'Ceres Search'"
+author: "Chris Brownlie"
+date: "2024-12-04"
+from: markdown+emoji
+categories:
+- rstats
+- "advent of code"
+---
+
+![](/assets/advent_of_code.png){height=90% width=90% fig-align=center fig-alt="Logo for Advent of Code"}
+
+## Day 4: Ceres Search
+
+"Looks like the Chief's not here. Next!" One of The Historians pulls out a device and pushes the only button on it. After a brief flash, you recognize the interior of the Ceres monitoring station!
+
+As the search for the Chief continues, a small Elf who lives on the station tugs on your shirt; she'd like to know if you could help her with her word search (your puzzle input). She only has to find one word: XMAS.
+
+This word search allows words to be horizontal, vertical, diagonal, written backwards, or even overlapping other words. It's a little unusual, though, as you don't merely need to find one instance of XMAS - you need to find all of them. Here are a few ways XMAS might appear, where irrelevant characters have been replaced with .:
+```
+..X...
+.SAMX.
+.A..A.
+XMAS.S
+.X....
+```
+The actual word search will be full of letters instead. For example:
+```
+MMMSXXMASM
+MSAMXMSMSA
+AMXSXMAAMM
+MSAMASMSMX
+XMASAMXAMM
+XXAMMXXAMA
+SMSMSASXSS
+SAXAMASAAA
+MAMMMXMMMM
+MXMXAXMASX
+```
+In this word search, XMAS occurs a total of 18 times; here's the same word search again, but where letters not involved in any XMAS have been replaced with .:
+```
+....XXMAS.
+.SAMXMS...
+...S..A...
+..A.A.MS.X
+XMASAMX.MM
+X.....XA.A
+S.S.S.S.SS
+.A.A.A.A.A
+..M.M.M.MM
+.X.X.XMASX
+```
+Take a look at the little Elf's word search. How many times does XMAS appear?
+
+```{r solution}
+library(dplyr)
+library(readr)
+library(purrr)
+library(stringr)
+library(rlang)
+library(tibble)
+library(tidyr)
+
+input <- read_lines("input.txt") |>
+  str_split("") |>
+  map_dfr(\(x) {
+    x |> 
+      set_names(1:length(x)) |> 
+      as_tibble_row()
+  })
+
+# First, some functions to help
+# From a cell coorindate in a wordsearch, move n steps in a direction and 
+# get the new coordinates
+move <- function(start, direction, n) {
+  steps <- direction * n
+  start + steps
+}
+
+# Check if a given coordinates are within the bounds of a wordsearch
+within_bounds <- function(location, limit_ws) {
+  if (any(dim(limit_ws)-location < 0) || 
+      any(location < 1)) return(FALSE)
+  TRUE
+}
+
+# For a given row and col coordinate in a wordsearch, see how many times
+# the word XMAS can be found starting here
+count_xmas <- function(row, col, wordsearch) {
+  # Only start with cells that contain X
+  if (wordsearch[row,col] != "X") return(0)
+  
+  # Look around in all directions
+  directions <- expand_grid(x = -1:1, y = -1:1)
+  
+  # For each direction from the starting cell
+  results <- map2_dbl(
+    directions$x,
+    directions$y,
+    \(x, y, df = wordsearch) {
+      
+      # For each direction, get letters 3 steps in that direction
+      direction_word <- map_chr(
+        1:3,
+        \(n, start = c(row, col), step = c(x, y)) {
+          # Move n steps in the current direction and get the new cell location
+          new <- move(start, step, n)
+
+          # If new location is outside wordsearch, return Z
+          if (!within_bounds(new, df)) return("Z")
+          
+          # Otherwise, return the letter
+          return(df[[new[2]]][[new[1]]])
+        }
+      )
+      # If the word in that direction doesn't match XMAS, return 0
+      if (!identical(direction_word, c("M", "A", "S"))) return(0)
+      
+      # Otherwise, return 1 to indicate an XMAS has been found
+      return(1)
+    }
+  )
+  # Return the total number of XMAS's which start at the current cell
+  sum(results)
+}
+
+# For each cell coordinate in a wordsearch, calculate the total number of XMAS's
+count_all_xmas <- function(wordsearch) {
+  expand_grid(x = seq_len(NCOL(wordsearch)), 
+              y = seq_len(NROW(wordsearch))) |>
+    pmap_dbl(
+      \(x, y) count_xmas(x, y, wordsearch = wordsearch)
+    ) |>
+    sum()
+}
+
+count_all_xmas(input)
+```
+
+Success! :star:
+
+## Part Two
+
+The Elf looks quizzically at you. Did you misunderstand the assignment?
+
+Looking for the instructions, you flip over the word search to find that this isn't actually an XMAS puzzle; it's an X-MAS puzzle in which you're supposed to find two MAS in the shape of an X. One way to achieve that is like this:
+```
+M.S
+.A.
+M.S
+```
+Irrelevant characters have again been replaced with . in the above diagram. Within the X, each MAS can be written forwards or backwards.
+
+Here's the same example from before, but this time all of the X-MASes have been kept instead:
+```
+.M.S......
+..A..MSMS.
+.M.S.MAA..
+..A.ASMSM.
+.M.S.M....
+..........
+S.S.S.S.S.
+.A.A.A.A..
+M.M.M.M.M.
+..........
+```
+In this example, an X-MAS appears 9 times.
+
+Flip the word search from the instructions back over to the word search side and try again. How many times does an X-MAS appear?
+
+```{r solution2}
+# For a given row and col coordinate in a wordsearch, see if it is the centre
+# of an x-mas
+count_x_mas <- function(row, col, wordsearch) {
+  # Only start with cells that contain A
+  if (wordsearch[row,col] != "A") return(0)
+  
+  # Only need to look in diagonal directions
+  directions <- expand_grid(x = c(-1, 1), y = c(-1, 1))
+  
+  # For each direction from the starting 'A' cell
+  results <- map2_chr(
+    directions$x,
+    directions$y,
+    \(x, y, df = wordsearch) {
+      # Get the adjacent cell
+      new <- move(c(row, col), c(x, y), 1)
+      
+      # If out of bounds return Z
+      if (!within_bounds(new, df)) return("Z")
+      
+      # Otherwise, return the letter
+      return(df[[new[2]]][[new[1]]])
+    }
+  )
+  
+  # Is there an X-MAS?
+  valid <- list(
+    c("M", "M", "S", "S"),
+    c("S", "M", "S", "M"),
+    c("S", "S", "M", "M"),
+    c("M", "S", "M", "S")
+  )
+  if (length(keep(valid, \(x) identical(x, results)))) return(1)
+  return(0)
+}
+
+# For each cell coordinate in a wordsearch, see if it is the center of an x-mas
+count_all_x_mas <- function(wordsearch) {
+  expand_grid(x = seq_len(NCOL(wordsearch)),
+              y = seq_len(NROW(wordsearch))) |>
+    pmap_dbl(
+      \(x, y) count_x_mas(x, y, wordsearch = wordsearch)
+    ) |>
+    sum()
+}
+
+count_all_x_mas(input)
+```
+
+Success! :star:
