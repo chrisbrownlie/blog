@@ -73,7 +73,7 @@ Your actual left and right lists contain many location IDs. What is the total di
 library(dplyr, warn.conflicts = FALSE)
 
 # Read input
-input <- readr::read_delim("input",
+input <- readr::read_delim("input.txt",
                            col_names = c("left", "right"),
                            col_types = list("i", "i"),
                            delim = "   ")

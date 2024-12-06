@@ -43,7 +43,7 @@ to_tibble <- function(l) {
 }
 
 # Read in input as single character vector
-input <- readr::read_lines("input") |>
+input <- readr::read_lines("input.txt") |>
   stringr::str_c(collapse = "")
 
 solution <- input |>

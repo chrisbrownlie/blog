@@ -52,7 +52,7 @@ Analyze the unusual data from the engineers. How many reports are safe?
 
 ```{r solution}
 # Get input as a list of numeric vectors
-input <- readr::read_lines("input") |>
+input <- readr::read_lines("input.txt") |>
   as.list() |>
   purrr::map(
     \(report) {

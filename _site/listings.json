@@ -3,6 +3,8 @@
     "listing": "/index.html",
     "items": [
       "/posts/welcome/index.html",
+      "/posts/advent_of_code_2024/day_6/index.html",
+      "/posts/advent_of_code_2024/day_5/index.html",
       "/posts/advent_of_code_2024/day_4/index.html",
       "/posts/advent_of_code_2024/day_3/index.html",
       "/posts/advent_of_code_2024/day_2/index.html",
